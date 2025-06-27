@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VINAY-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">V.V</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi, My name is <span class="textColor">Vinay</span>
+                <div>and I am a passionate<br /><span id="element"></span></div>
+            </div>
+            <div class="rightSection">
+                <img src="first.png" alt="Developer Image" />
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="skills-section" id="skills">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill-card"><strong>Languages:</strong><br />Java, Python, JavaScript</div>
+                <div class="skill-card"><strong>Database:</strong><br />MySQL</div>
+                <div class="skill-card"><strong>Frontend:</strong><br />HTML, CSS, Tailwind CSS</div>
+                <div class="skill-card"><strong>Tools:</strong><br />Microsoft 365, Git, Figma, Overleaf</div>
+                <div class="skill-card"><strong>Management:</strong><br />Event & Public Relations</div>
+                <div class="skill-card"><strong>Video Editing:</strong><br />Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve</div>
+                <div class="skill-card"><strong>Graphics Designing:</strong><br />Adobe Photoshop, Illustrator, CorelDRAW</div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="third.jpeg" alt="Project 1" class="project-image" />
+                    <div class="project-content">
+                        <h3>Amazon Prime Video Landing Page Clone</h3>
+                        <p>A visually rich, responsive clone of the Amazon Prime Video landing page built using HTML5, CSS3 and JavaScript.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/vinayvyas07/Amazon-Prime-Login-Page-Clone" target="_blank">GitHub</a>
+                            <a href="https://amazon-prime-login-page-clone.vercel.app/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2" class="project-image" />
+                    <div class="project-content">
+                        <h3>Project Two</h3>
+                        <p>An e-commerce platform with integrated payment gateway and user dashboard.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/vinayvyas07/project-two" target="_blank">GitHub</a>
+                            <a href="https://projecttwo.example.com" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Project 3" class="project-image" />
+                    <div class="project-content">
+                        <h3>Project Three</h3>
+                        <p>A mobile app for fitness tracking and workout planning.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/vinayvyas07/project-three" target="_blank">GitHub</a>
+                            <a href="https://projectthree.example.com" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="contact">
+            <h2 style="text-align:center; color: rgb(178, 115, 238); margin-bottom: 30px;">Contact Me</h2>
+            <p style="text-align:center; font-size: 1.1rem;">
+                Feel free to reach out via any of the following:
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <a href="https://www.linkedin.com/in/vinay-vyas-338544251/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+            <div>
+                <a href="https://github.com/vinayvyas07" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+            </div>
+            <div>
+                <a href="mailto:vyasvinay7705@gmail.com" target="_blank"><i class="fas fa-envelope"></i>vyasvinay7705@gmail.com</a>
+            </div>
+            <div>
+                <a href="https://flowcv.com/resume/t0ccrsjov4m1" target="_blank"><i class="fas fa-file-alt"></i>Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphics Designer', 'Video Editor'],
+            typeSpeed: 100,
+            loop: true,
+        });
+    </script>
+</body>
+</html>
